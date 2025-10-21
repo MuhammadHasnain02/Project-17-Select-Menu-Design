@@ -19,7 +19,39 @@
             font-weight: 500;
             font-style: normal;
         }
-    </style>
+
+        /* Custom animation */
+        @keyframes fadeSlideDown {
+            0% {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeSlideUp {
+            0% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+            100% {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+        }
+
+        .show-menu {
+            display: block;
+            animation: fadeSlideDown 0.6s ease forwards;
+        }
+
+        .hide-menu {
+            animation: fadeSlideUp 0.5s ease forwards;
+        }
+  </style>
 
 </head>
 
@@ -38,7 +70,7 @@
             <div class="flex flex-col justify-center text-gray-200">
 
                 <div id="selectField" class="">
-                    <button id="changIcon" class="flex flex-row items-center space-x-6 border-1 border-[#c8cbd0] px-5 py-2.5 rounded-full hover:cursor-pointer">
+                    <button id="changIcon" class="flex flex-row items-center space-x-6 border-1 border-[#c8cbd0] px-5 py-2.5 rounded-full transition duration-700 ease-in-out hover:scale-95 hover:cursor-pointer">
                         <p class="text-[16px]">Select Social Media</p>
                         <i class="fa-solid fa-angle-down"></i>
                     </button>
