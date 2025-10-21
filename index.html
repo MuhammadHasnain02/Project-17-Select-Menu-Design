@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Menu Design</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Signika:wght@300..700&display=swap" rel="stylesheet">
+
+    <style>
+        body{
+            font-family: "Montserrat", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 500;
+            font-style: normal;
+        }
+    </style>
+
+</head>
+
+<body class="bg-linear-to-tl from-[#01BFBF] to-[#F49880] min-h-screen">
+
+    <section class="flex flex-col items-center h-screen justify-center">
+        <div class="flex flex-row justify-center space-x-10 px-10 py-8 bg-white/10 backdrop-blur-md border border-white/20 rounded-xl shadow-md">
+            
+            <div class="flex flex-row items-center">
+                <h2 class="flex flex-col text-3xl font-extrabold bg-gradient-to-br from-[#e17559] to-[#079393] bg-clip-text text-transparent drop-shadow-lg tracking-wide">
+                    <span class="pl-0">Select Menu</span>
+                    <span class="text-center">Design</span>
+                </h2>
+            </div>
+    
+            <div class="flex flex-col justify-center text-gray-200">
+
+                <div id="selectField" class="">
+                    <button id="changIcon" class="flex flex-row items-center space-x-6 border-1 border-[#c8cbd0] px-5 py-2.5 rounded-full hover:cursor-pointer">
+                        <p class="text-[16px]">Select Social Media</p>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </button>
+                </div>
+                <ul id="menuList" class="hidden absolute top-27 right-13 px-4 py-4 space-y-3 backdrop-blur-md border border-white/20 rounded-md w-[210px]">
+                    
+                    <li class="flex flex-row items-center gap-3 hover:border-b-1 hover:cursor-pointer">
+                        <i class="fa-brands fa-youtube m-0"></i>
+                        <p>Youtube</p>
+                    </li>
+                    <li class="flex flex-row items-center gap-3 hover:border-b-1 hover:cursor-pointer">
+                        <i class="fa-brands fa-facebook m-0"></i>
+                        <p>Facebook</p>
+                    </li>
+                    <li class="flex flex-row items-center gap-3 hover:border-b-1 hover:cursor-pointer">
+                        <i class="fa-brands fa-instagram m-0"></i>
+                        <p>Instagram</p>
+                    </li>
+                    <li class="flex flex-row items-center gap-3 hover:border-b-1 hover:cursor-pointer">
+                        <i class="fa-brands fa-twitter m-0"></i>
+                        <p>Twitter</p>
+                    </li>
+                    <li class="flex flex-row items-center gap-3 hover:border-b-1 hover:cursor-pointer">
+                        <i class="fa-brands fa-pinterest m-0"></i>
+                        <p>Pinterest</p>
+                    </li>
+                    <li class="flex flex-row items-center gap-3 hover:border-b-1 hover:cursor-pointer">
+                        <i class="fa-brands fa-whatsapp m-0"></i>
+                        <p>Whatsapp</p>
+                    </li>
+
+                </ul>
+
+            </div>
+            
+        </div>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
