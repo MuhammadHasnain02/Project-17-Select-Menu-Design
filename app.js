@@ -1,6 +1,6 @@
 let changIcon = document.getElementById("changIcon")
-
 let menuList = document.getElementById("menuList")
+let selectField = document.getElementById("selectField")
 
 // Icon Handling
 changIcon.addEventListener("click" , () => {
@@ -28,3 +28,19 @@ changIcon.addEventListener("click" , () => {
     }
 
 })
+
+// Handling
+
+for (let li of menuList.children) {
+
+    li.addEventListener("click" , () => {
+
+        let selectTxt = li.children[1].textContent.trim()
+        changIcon.querySelector("p").textContent = selectTxt
+
+        menuList.classList.add("hidden" , "hide-menu")
+        changIcon.children[1].classList.replace("fa-angle-up", "fa-angle-down");
+
+    })
+
+}
